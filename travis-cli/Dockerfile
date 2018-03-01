@@ -7,7 +7,7 @@ FROM alpine:3.6
 RUN echo 'gem: --no-rdoc --no-ri' >> "$HOME/.gemrc"
 
 RUN apk add --update --no-cache git build-base ruby-dev libffi-dev ruby-bundler ca-certificates && \
-    gem install travis && \
+    gem install travis -v 1.8.8 && \
     rm /var/cache/apk/* && \
     rm -rf /usr/share/ri
 
