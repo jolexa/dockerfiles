@@ -1,6 +1,6 @@
 FROM alpine:3.6
 
-# Add to PATH, like this:
+# Add to PATH, like this
 # echo 'docker run -it --rm -v $(pwd):/code -w /code -v $HOME/.travis:/root/.travis jolexa/travis-cli $@' > ~/bin/travis
 
 # Skip installing gem documentation
